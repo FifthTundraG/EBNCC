@@ -4,6 +4,7 @@
   "package": "me.frogtato.ebncc.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ContextualBarRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
