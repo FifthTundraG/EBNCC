@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ebncc",
+  "version": "${version}",
+  "name": "EBNCC",
+  "description": "Experience Bar Number Color Change",
+  "authors": [
+    "FifthTundraG"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/ebncc",
+    "sources": "https://github.com/FifthTundraG/EBNCC"
+  },
+  "license": "MIT",
+  "icon": "assets/ebncc/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.frogtato.ebncc.EBNCC"
+    ]
+  },
+  "mixins": [
+    "ebncc.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  }
+}
