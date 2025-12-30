@@ -1,6 +1,7 @@
 package me.frogtato.ebncc.mixin;
 
-import me.frogtato.ebncc.EBNCC;
+import me.frogtato.ebncc.config.ModConfig;
+import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.contextualbar.ContextualBarRenderer;
@@ -21,7 +22,8 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString1(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        guiGraphics.drawString(font, component, i, j, EBNCC.getBorderReplacementColor(), bl);
+        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
     }
 
     /** left border */
@@ -34,7 +36,8 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString2(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        guiGraphics.drawString(font, component, i, j, EBNCC.getBorderReplacementColor(), bl);
+        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
     }
 
     /** bottom border */
@@ -47,7 +50,8 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString3(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        guiGraphics.drawString(font, component, i, j, EBNCC.getBorderReplacementColor(), bl);
+        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
     }
 
     /** top border */
@@ -60,7 +64,8 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString4(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        guiGraphics.drawString(font, component, i, j, EBNCC.getBorderReplacementColor(), bl);
+        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
     }
 
     /** actual number (the green part in vanilla) */
@@ -73,6 +78,7 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString5(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        guiGraphics.drawString(font, component, i, j, EBNCC.getReplacementColor(), bl);
+        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        guiGraphics.drawString(font, component, i, j, config.numberColor, bl);
     }
 }
