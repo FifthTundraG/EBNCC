@@ -21,9 +21,9 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.ColorPicker(allowAlpha = true)
     @ConfigEntry.Gui.Tooltip
     @Comment("ARGB Format")
-    public int borderColor = -16777216;
+    public int numberColor = -8323296;
     @ConfigEntry.ColorPicker(allowAlpha = true)
     @ConfigEntry.Gui.Tooltip
     @Comment("ARGB Format")
-    public int numberColor = -8323296;
+    public int borderColor = -16777216;
 }
