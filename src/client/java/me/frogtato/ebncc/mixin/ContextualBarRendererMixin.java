@@ -22,8 +22,7 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString1(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
+        guiGraphics.drawString(font, component, i, j, ModConfig.INSTANCE.borderColor, bl);
     }
 
     /** left border */
@@ -36,8 +35,7 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString2(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
+        guiGraphics.drawString(font, component, i, j, ModConfig.INSTANCE.borderColor, bl);
     }
 
     /** bottom border */
@@ -50,8 +48,7 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString3(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
+        guiGraphics.drawString(font, component, i, j, ModConfig.INSTANCE.borderColor, bl);
     }
 
     /** top border */
@@ -64,8 +61,7 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString4(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-        guiGraphics.drawString(font, component, i, j, config.borderColor, bl);
+        guiGraphics.drawString(font, component, i, j, ModConfig.INSTANCE.borderColor, bl);
     }
 
     /** actual number (the green part in vanilla) */
@@ -78,7 +74,6 @@ public interface ContextualBarRendererMixin {
             )
     )
     private static void redirectDrawString5(GuiGraphics guiGraphics, Font font, Component component, int i, int j, int k, boolean bl) {
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-        guiGraphics.drawString(font, component, i, j, config.numberColor, bl);
+        guiGraphics.drawString(font, component, i, j, ModConfig.INSTANCE.numberColor, bl);
     }
 }

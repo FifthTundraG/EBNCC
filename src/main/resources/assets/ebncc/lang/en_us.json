@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.ebncc.option.borderColor": "Border Color",
+  "text.autoconfig.ebncc.option.borderColor.@Tooltip": "ARGB Format",
+  "text.autoconfig.ebncc.option.numberColor": "Number Color",
+  "text.autoconfig.ebncc.option.numberColor.@Tooltip": "ARGB Format",
+  "text.autoconfig.ebncc.title": "Experience Bar Number Color Change"
+}
