@@ -1,0 +1,1 @@
+for reasons i do not understand, I need to put meta under main for processResources to modify the stuff in fabric.mod.json. as far as i can tell there's no issue with doing it but it's annoying.

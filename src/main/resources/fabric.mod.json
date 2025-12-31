@@ -9,7 +9,8 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/ebncc",
-    "sources": "https://github.com/FifthTundraG/EBNCC"
+    "sources": "https://github.com/FifthTundraG/EBNCC",
+    "issues": "https://github.com/FifthTundraG/EBNCC/issues"
   },
   "license": "MIT",
   "icon": "assets/ebncc/icon.png",
@@ -29,6 +30,6 @@
     "fabricloader": ">=0.16.0",
     "minecraft": ">=1.21.7",
     "java": ">=21",
-    "cloth-config": ">=19.0.147"
+    "cloth-config": ">=${cloth_config_version}"
   }
 }
