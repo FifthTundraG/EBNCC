@@ -3,13 +3,13 @@ package me.frogtato.ebncc.mixin;
 import me.frogtato.ebncc.config.ModConfig;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
-import net.minecraft.client.gui.contextualbar.ContextualBarRenderer;
+import net.minecraft.client.gui.contextualbar.ContextualBar;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(ContextualBarRenderer.class)
+@Mixin(ContextualBar.class)
 public interface ContextualBarRendererMixin {
     /** right border */
     @Redirect(
